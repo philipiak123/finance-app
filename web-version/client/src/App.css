@@ -1,0 +1,11 @@
+/* Ustawienia dla trybu jasnego */
+.light-mode-body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Ustawienia dla trybu ciemnego */
+.dark-mode-body {
+  background-color: #333;
+  color: #fff;
+}

@@ -1,0 +1,139 @@
+/* Tryb ciemny */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.my-account.dark-mode {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+/* Tryb jasny */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.my-account.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Stylizacja konta */
+.my-account {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.account-details {
+  margin-bottom: 20px;
+}
+
+.change-password-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.change-password-button:hover {
+  background-color: #0056b3;
+}
+
+/* Popup zmiany hasła */
+.password-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Popup w trybie ciemnym */
+.password-popup.dark-mode {
+  background-color: rgba(0, 0, 0, 0.7);  /* Mroczniejsze tło w ciemnym trybie */
+}
+
+.password-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup w trybie ciemnym */
+.password-popup-content.dark-mode {
+  background-color: #333;  /* Ciemne tło popupu w trybie ciemnym */
+  color: #f0f0f0; /* Jaśniejsze teksty w trybie ciemnym */
+}
+
+.password-popup input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Input w ciemnym trybie */
+.password-popup-content.dark-mode input {
+  background-color: #444;
+  color: #f0f0f0;
+  border: 1px solid #666;
+}
+
+.update-password-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.update-password-button:hover {
+  background-color: #218838;
+}
+
+/* Przyciski w ciemnym trybie */
+.password-popup-content.dark-mode .update-password-button {
+  background-color: #218838;
+}
+
+.close-popup-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.close-popup-button:hover {
+  background-color: #c82333;
+}
+
+/* Przycisk zamknięcia w ciemnym trybie */
+.password-popup-content.dark-mode .close-popup-button {
+  background-color: #c82333;
+}
+
+.message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* W ciemnym trybie zmieniamy kolor tekstu komunikatu */
+.password-popup-content.dark-mode .message {
+  color: #ff6b6b;
+}

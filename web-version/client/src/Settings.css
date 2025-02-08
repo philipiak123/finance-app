@@ -1,0 +1,30 @@
+/* Style dla trybu jasnego */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.settings.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Style dla trybu ciemnego */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

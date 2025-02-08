@@ -1,0 +1,150 @@
+/* Expenses.css */
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.expenses-list {
+  list-style-type: none; /* Usuń punkty listy */
+  padding: 0;
+  text-align: center; /* Wyśrodkuj listę */
+}
+
+.expenses-list li {
+  margin: 10px 0;
+}
+
+.expenses-list button {
+  margin-left: 10px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  text-align: center;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal input,
+.modal select {
+  display: block;
+  width: 80%; /* Zmniejszenie szerokości do 80% */
+  margin: 10px auto; /* Wyśrodkowanie inputów */
+  padding: 8px;
+}
+
+.modal button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal button:first-of-type {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.modal button:last-of-type {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.modal.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.modal.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.legend {
+  color: #000; /* Domyślny kolor tekstu */
+}
+
+.expenses {
+  padding: 20px;
+}
+
+.expenses.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.expenses.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+.modal.dark-modal {
+  background-color: #333;
+  color: #fff;
+}
+.modal.light-modal {
+  background-color: #fff;
+  color: #000;
+}

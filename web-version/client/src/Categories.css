@@ -1,0 +1,266 @@
+/* Ogólne style dla sekcji kategorii */
+.categories {
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tryb jasny */
+.categories.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+.categories.light-mode .add-button,
+.categories.light-mode .success-message,
+.categories.light-mode .error-message,
+.categories.light-mode .modal,
+.categories.light-mode .modal h2,
+.categories.light-mode .modal input[type="text"],
+.categories.light-mode .modal input[type="color"],
+.categories.light-mode .modal button,
+.categories.light-mode .modal-overlay,
+.categories.light-mode .modal-overlay .modal {
+  background-color: #fff;
+  color: #333;
+  border-color: #ccc;
+}
+
+/* Tryb ciemny */
+.categories.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.categories.dark-mode .add-button,
+.categories.dark-mode .success-message,
+.categories.dark-mode .error-message,
+.categories.dark-mode .modal,
+.categories.dark-mode .modal h2,
+.categories.dark-mode .modal input[type="text"],
+.categories.dark-mode .modal input[type="color"],
+.categories.dark-mode .modal button,
+.categories.dark-mode .modal-overlay,
+.categories.dark-mode .modal-overlay .modal {
+  background-color: #333;
+  color: #fff;
+  border-color: #666;
+}
+
+/* Nagłówek kategorii */
+.categories-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Lista kategorii */
+.categories-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trzy kolumny */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Styl dla pojedynczej kategorii */
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Kolor kategorii */
+.category-color {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Nazwa kategorii */
+.category-name {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Przyciski edycji i usuwania */
+.category-buttons {
+  margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Modal - tło */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal - okno */
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Modal - nagłówek */
+.modal h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Inputy w modalu */
+.modal input[type="text"],
+.modal input[type="color"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.modal input[type="color"] {
+  height: 40px;
+}
+
+/* Przyciski w modalu */
+.modal button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal button:first-child {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.modal button:first-child:hover {
+  background-color: #218838;
+}
+
+.modal button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.modal button:last-child:hover {
+  background-color: #a71d2a;
+}
+
+/* Modal błędu */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Modal sukcesu */
+.success-message {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Przycisk dodawania kategorii */
+.add-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dodatkowe style dla trybu ciemnego */
+.dark-mode .modal,
+.dark-mode .modal input[type="text"],
+.dark-mode .modal input[type="color"] {
+  background-color: #444;
+  color: #fff;
+  border-color: #666;
+}
+
+.dark-mode .modal h2 {
+  color: #fff;
+}
+
+.dark-mode .edit-button {
+  background-color: #0084ff;
+}
+
+.dark-mode .edit-button:hover {
+  background-color: #0061b3;
+}
+
+.dark-mode .delete-button {
+  background-color: #e60029;
+}
+
+.dark-mode .delete-button:hover {
+  background-color: #b3001f;
+}
+
+.dark-mode .add-button {
+  background-color: #0066ff;
+}
+
+.dark-mode .add-button:hover {
+  background-color: #004bb3;
+}
